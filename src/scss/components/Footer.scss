@@ -17,8 +17,6 @@
     flex-wrap: wrap;
     gap: 20px;
     justify-content: space-around;
-    @include md {
-    }
     @include xl {
       padding: 51px 0 0;
       gap: 44px;
