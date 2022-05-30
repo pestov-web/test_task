@@ -1,0 +1,76 @@
+@keyframes animateModal {
+  0% {
+    top: 0;
+    right: -600px;
+    bottom: 0;
+  }
+  100% {
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.modal-menu {
+  position: absolute;
+  display: flex;
+  max-width: 220px;
+  background: $white;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  animation-name: animateModal;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+  &__overlay {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    height: 1000px;
+  }
+  &__nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 100px 0 0;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    &-item {
+      position: relative;
+      text-align: center;
+    }
+    &-link {
+      width: 100%;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0.2px;
+      color: $dark;
+      background: none;
+      box-shadow: none;
+      transition: color linear 0.4s;
+      &:hover {
+        color: $Accent;
+      }
+    }
+  }
+  &__close-button {
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    font-size: 30px;
+    background: none;
+    box-shadow: none;
+    color: $dark;
+    right: 20px;
+    top: 12px;
+  }
+}

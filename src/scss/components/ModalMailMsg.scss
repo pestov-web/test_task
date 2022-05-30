@@ -1,0 +1,38 @@
+.mail-modal {
+  background-color: $white;
+  box-sizing: border-box;
+  max-width: 500px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border-radius: 30px;
+  margin: 10px;
+  &__overlay {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 4;
+  }
+  &__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.5;
+    color: $dark;
+  }
+  &__close-button {
+    width: 200px;
+    height: 45px;
+    background: $Accent;
+    box-shadow: $shadow;
+    border-radius: 30px;
+  }
+}

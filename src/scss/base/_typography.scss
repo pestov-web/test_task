@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+body {
+  font-family: $font-family;
+}
+
+p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: $gray;
+  text-align: center;
+}
+
+h1 {
+  color: $white;
+  text-align: center;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: $dark;
+  text-align: center;
+  padding: 0 10px;
+  @include sm {
+    font-size: 28px;
+    line-height: 53px;
+  }
+  @include md {
+    font-size: 32px;
+    line-height: 53px;
+  }
+  @include lg {
+    font-size: 36px;
+    line-height: 53px;
+  }
+}
+
+h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: $black;
+}

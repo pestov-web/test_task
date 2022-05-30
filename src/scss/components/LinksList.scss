@@ -1,0 +1,54 @@
+.links {
+  &__title {
+    margin-bottom: 28px;
+  }
+  &__list {
+    width: 242px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    &_hideable {
+    }
+    &-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    &-icon {
+      height: 13px;
+      width: 17px;
+      font-size: 14px;
+      color: $gray;
+      margin-left: -3px;
+      &_mail,
+      &_phone,
+      &_map {
+        margin-right: 10px;
+      }
+      &_mail {
+        height: 12px;
+        width: 18px;
+        background: no-repeat center url("../../images/Footer/mail-min.svg");
+      }
+      &_phone {
+        height: 16px;
+        width: 18px;
+        background: no-repeat center url("../../images/Footer/phone-min.svg");
+      }
+      &_map {
+        height: 16px;
+        width: 18px;
+        background: no-repeat center url("../../images/Footer/map-min.svg");
+      }
+    }
+    &-link {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      color: $gray;
+      text-decoration: none;
+    }
+  }
+}

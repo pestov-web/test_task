@@ -1,0 +1,99 @@
+.services {
+  background: $background-white;
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 74px 0 104px;
+  overflow: hidden;
+  &__title {
+    max-width: 740px;
+  }
+  &__subtitle {
+    margin-top: 5px;
+    max-width: 740px;
+    line-height: 25px;
+    padding: 15px;
+    @include xl {
+      padding: 0;
+    }
+  }
+  &__list {
+    width: 100%;
+    max-width: 1113px;
+    margin: 48px auto 35px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    min-height: 139px;
+    @include xl {
+      gap: 28px;
+      justify-content: center;
+    }
+    &-item {
+      display: flex;
+      gap: 16px;
+      flex-direction: column;
+      align-items: center;
+      @include xl {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+    &-badge {
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 110px;
+      height: 110px;
+      border: 1px solid #e0e0e0;
+      border-radius: 50%;
+      @include xl {
+        align-self: flex-start;
+      }
+    }
+    &-icon {
+      box-sizing: border-box;
+      width: 90px;
+      height: 90px;
+      border: 1px solid $Accent;
+      border-radius: 50%;
+      background: no-repeat center url("../../images/Srvices/Group-min.svg");
+    }
+    &-text {
+      max-width: 326px;
+      margin-top: 0;
+      @include xl {
+        margin-top: 18px;
+        max-width: 226px;
+      }
+    }
+    &-title {
+      margin: 18px 0 12px;
+      text-align: center;
+      @include xl {
+        margin: 28px 0 12px;
+        text-align: left;
+      }
+    }
+    &-paragraph {
+      margin-top: 0;
+      text-align: center;
+      font-size: 14px;
+      line-height: 22px;
+      @include xl {
+        text-align: left;
+      }
+    }
+  }
+  &__more-button {
+    width: 200px;
+    height: 45px;
+    border-radius: 30px;
+  }
+}

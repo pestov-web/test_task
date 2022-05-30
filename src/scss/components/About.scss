@@ -1,0 +1,110 @@
+.about {
+  margin: 0 auto;
+  background: $background-gray;
+  max-width: 1920px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__container {
+    position: relative;
+    max-width: 1113px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 100px 0px;
+    flex-direction: column;
+    @include sm {
+      flex-direction: row;
+    }
+    @include lg {
+      gap: 0;
+      justify-content: space-between;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      border-bottom: 1px solid $light-gray;
+      bottom: 10px;
+    }
+  }
+  &__list {
+    box-sizing: border-box;
+    max-width: 1113px;
+    width: 100%;
+    padding: 55px 10px;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    @include lg {
+      gap: 100px;
+    }
+    &-numbers {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    &-icon {
+      background: no-repeat center url("../../images/About/web-programming.svg");
+      height: 30px;
+      width: 30px;
+    }
+    &-count {
+      font-size: 36px;
+      line-height: 53px;
+    }
+    &-text {
+      margin: 4px 0 0;
+    }
+  }
+  &__text {
+    max-width: 500px;
+    width: calc(100% / 12 * 12 - 40px);
+    padding: 48px 20px 0;
+    @include lg {
+      padding: 0 20px;
+      width: calc(100% / 12 * 6 - 40px);
+    }
+    @include xl {
+      margin-top: -5px;
+      padding: 0;
+      width: calc(100% / 12 * 6 - 40px);
+    }
+    &-title {
+      text-align: left;
+      margin: 0;
+      padding: 0;
+    }
+    &-subtitle {
+      max-width: 490px;
+      text-align: left;
+      margin: 24px 0 25px;
+      font-weight: 400;
+      line-height: 25px;
+    }
+    &-link {
+      font-weight: 500;
+      color: $Accent;
+    }
+  }
+  &__image {
+    max-width: 500px;
+    width: calc(100% / 12 * 12 - 40px);
+    max-height: 400px;
+    height: 100%;
+    padding: 0 20px;
+    @include lg {
+      width: calc(100% / 12 * 6 - 40px);
+    }
+    @include xl {
+      width: calc(100% / 12 * 6 - 40px);
+      padding: 0;
+    }
+  }
+}

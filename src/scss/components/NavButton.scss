@@ -1,0 +1,10 @@
+.nav-button {
+  background: none;
+  box-shadow: none;
+  transition: color linear 0.4s;
+  &:hover {
+    color: $Accent;
+  }
+  &_place_modal {
+  }
+}

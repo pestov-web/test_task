@@ -1,0 +1,79 @@
+.subscribe {
+  background: $background-white;
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 110px 0 102px;
+  &__title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  &__subtitle {
+    margin: 12px 0 23px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: $gray;
+    padding: 0 10px;
+    @include sm {
+      padding: 0;
+    }
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    @include sm {
+      flex-direction: row;
+      gap: 0;
+    }
+  }
+
+  &__input {
+    box-sizing: border-box;
+    padding-left: 32px;
+
+    width: 270px;
+    height: 44.75px;
+    border: 1px solid #f2f2f2;
+    box-shadow: $shadow;
+    border-radius: 30px;
+    font-size: 13px;
+    line-height: 21px;
+    &:focus {
+      outline: none;
+    }
+    @include sm {
+      border-radius: 30px 0 0 30px;
+      width: 300px;
+    }
+  }
+  &__submit {
+    box-sizing: border-box;
+    width: 190px;
+
+    height: 44.75px;
+    background: $Accent;
+    box-shadow: $shadow;
+    border-radius: 30px;
+    @include sm {
+      border-radius: 0 30px 30px 0;
+      padding-right: 10px;
+    }
+  }
+  &__error {
+    margin-top: 32px;
+    font-size: 13px;
+    line-height: 21px;
+    color: $gray;
+    &_active {
+      color: $error;
+      font-size: 15px;
+    }
+  }
+}

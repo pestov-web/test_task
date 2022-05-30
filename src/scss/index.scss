@@ -1,0 +1,35 @@
+//abstracts
+@import "abstracts/variables";
+@import "abstracts/functions";
+@import "abstracts/mixins";
+
+//vendors
+@import "vendors/Slider";
+// Import Swiper styles
+@import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css";
+
+// base
+@import "base/reset";
+@import "base/typography";
+
+// layout
+@import "base/layout";
+
+//components
+@import "components/Icons";
+@import "components/Header";
+@import "components/NavMenu";
+@import "components/NavButton";
+@import "components/Main";
+@import "components/Hero";
+@import "components/Services";
+@import "components/About";
+@import "components/Projects";
+@import "components/Slider";
+@import "components/Subscribe";
+@import "components/Footer";
+@import "components/LinksList";
+@import "components/SocialButtons";
+@import "components/ModalMenu";
+@import "components/ModalMailMsg";
+@import "components/ButtonTop";
